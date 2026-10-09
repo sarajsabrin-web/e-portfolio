@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <title>Resume — Sabrin Saraj | Educator &amp; Digital Education Student</title>
+  <meta name="description" content="Resume of Sabrin Saraj — Registered Early Childhood Educator, Ontario Certified Teacher, and MSc Digital Education student at XJTLU." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍁</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">🍁</span> Sabrin Saraj
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Resume</p>
+        <h1>My Resume</h1>
+        <p class="lead">
+          Sabrin Saraj is a Canadian educator, equity consultant, and curriculum developer with over 12 years of experience teaching young learners and facilitating professional learning across Ontario. As a Registered Early Childhood Educator and Ontario Certified Teacher, she has led culturally responsive and anti-oppressive practice in classrooms, school boards, and community organizations — work recognized by the 2021 OCDSB Excellence in Equity Award. She is currently pursuing her MSc in Digital Education at Xi'an Jiaotong-Liverpool University in Suzhou, exploring how thoughtful digital tools can advance equitable learning for all.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="resume-toolbar">
+          <a class="btn btn-primary" href="resume.pdf" download>⬇️ Download PDF</a>
+        </div>
+
+        <div class="resume-layout">
+          <!-- ===== Sidebar ===== -->
+          <aside class="resume-side">
+            <img class="side-photo" src="images/headshot.jpg" alt="Portrait of Sabrin Saraj" />
+            <h3>Sabrin Saraj</h3>
+            <p class="role">Educator · Equity Consultant · Curriculum Developer<br />MSc Digital Education Candidate</p>
+
+            <div class="side-block">
+              <h4>Education</h4>
+              <ul>
+                <li>MSc Digital Education — Xi'an Jiaotong–Liverpool University, Suzhou · Sep 2026 – Present</li>
+                <li>BEd, Early Childhood Education — University of New Brunswick · 2021 – 2023</li>
+                <li>ECE Diploma — Algonquin College, Ottawa · 2011 – 2013</li>
+              </ul>
+            </div>
+
+            <div class="side-block">
+              <h4>Qualifications</h4>
+              <ul>
+                <li>Ontario Certified Teacher (OCT) — Reg. #72738</li>
+                <li>Registered Early Childhood Educator (RECE) — Reg. #47112</li>
+              </ul>
+            </div>
+
+            <div class="side-block">
+              <h4>Additional Teaching Qualifications</h4>
+              <ul>
+                <li>Reading, Part 1 — Dec 2024</li>
+                <li>Kindergarten, Part 1 — Aug 2025</li>
+                <li>Junior Division — Dec 2025</li>
+                <li>Primary Division — Jun 2026</li>
+              </ul>
+            </div>
+
+            <div class="side-block">
+              <h4>Awards</h4>
+              <ul>
+                <li>2021 OCDSB Excellence in Equity Award</li>
+              </ul>
+            </div>
+
+            <div class="side-block">
+              <h4>Skills</h4>
+              <div class="chip-row">
+                <span class="chip">Curriculum design</span>
+                <span class="chip">Equity &amp; anti-oppressive practice</span>
+                <span class="chip">Facilitation &amp; training</span>
+                <span class="chip">Culturally responsive learning</span>
+                <span class="chip">Digital learning modules</span>
+                <span class="chip">Stakeholder engagement</span>
+                <span class="chip">Policy review</span>
+                <span class="chip">Workshop design</span>
+                <span class="chip">Inclusive education</span>
+                <span class="chip">Early years pedagogy</span>
+                <span class="chip">Grant coordination</span>
+                <span class="chip">Research translation</span>
+              </div>
+            </div>
+
+            <div class="side-block">
+              <h4>Languages</h4>
+              <ul>
+                <li>English — fluent</li>
+                <li>Arabic — fluent</li>
+                <li>Tigrinya — fluent</li>
+                <li>Mandarin — in progress</li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- ===== Main timeline ===== -->
+          <div>
+            <h2 style="margin-bottom:1.6rem;">Experience</h2>
+            <div class="timeline">
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>Sep 2026 – Present</span>
+                    <span class="place">Xi'an Jiaotong-Liverpool University · Suzhou, China</span>
+                  </div>
+                  <h3>MSc Digital Education</h3>
+                  <p>
+                    Deepening my practice at the intersection of learning and technology — exploring
+                    digital pedagogy, learning design, and how thoughtful digital tools can make
+                    education more engaging and equitable.
+                  </p>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>2023 – 2026</span>
+                    <span class="place">Culture Check · Ottawa, Canada</span>
+                  </div>
+                  <h3>Consultant &amp; Learning Designer</h3>
+                  <p>
+                    Led the design and facilitation of anti-oppressive and culturally responsive
+                    professional learning for educators, school boards, and community organizations.
+                  </p>
+                  <ul>
+                    <li>Built digital learning modules and in-person workshop series on anti-Black racism for early childhood educators and professionals</li>
+                    <li>Supported government partners and educational leaders in translating equity research into classroom and system-level practice</li>
+                    <li>Created reflective learning environments that challenge bias and centre belonging</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>2014 – 2026</span>
+                    <span class="place">Ottawa-Carleton District School Board (OCDSB) · Ottawa, Canada</span>
+                  </div>
+                  <h3>Ontario Certified Teacher &amp; Registered Early Childhood Educator</h3>
+                  <p>
+                    Designed inquiry-based, culturally responsive learning environments from
+                    Kindergarten through Grade 8. Implemented the Ontario Kindergarten Program and
+                    <em>How Does Learning Happen?</em> pedagogical framework across early years classrooms.
+                  </p>
+                  <ul>
+                    <li>Recipient of the <strong>2021 OCDSB Excellence in Equity Award</strong> for leadership in inclusive education practice</li>
+                    <li>Planned, documented, and communicated children's learning through the provincial Communication of Learning framework</li>
+                    <li>Collaborated with multidisciplinary teams on responsive pedagogy, assessment, and family partnership</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>2020 – 2024</span>
+                    <span class="place">Mante Molepo Consulting · Ottawa, Canada</span>
+                  </div>
+                  <h3>Equity &amp; Inclusion Consultant</h3>
+                  <p>
+                    Delivered research-informed professional learning for schools and senior leadership
+                    teams, with a focus on aligning institutional policies with equitable frameworks.
+                  </p>
+                  <ul>
+                    <li>Co-designed a <strong>pilot Accelerator Program</strong> for the Ontario Bar Association to support early-career lawyers</li>
+                    <li>Reviewed and revised equity policy documents across educational institutions</li>
+                    <li>Created continuous-learning resources and strategic tools for long-term organizational growth</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>2018 – 2023</span>
+                    <span class="place">Parents for Diversity · Ottawa, Canada</span>
+                  </div>
+                  <h3>Board Director</h3>
+                  <p>
+                    Oversaw grant-funded initiatives advancing anti-racism and inclusive education
+                    across school communities in the Ottawa region.
+                  </p>
+                  <ul>
+                    <li>Designed and facilitated professional learning for <strong>over 4,000 educators</strong></li>
+                    <li>Curated anti-bias literature collections for schools and school boards</li>
+                    <li>Managed grant projects and led research to inform community engagement strategies</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <h2 style="margin:2.6rem 0 1.6rem;">Education</h2>
+            <div class="timeline">
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>Sep 2026 – Present</span>
+                    <span class="place">Suzhou, China</span>
+                  </div>
+                  <h3>MSc Digital Education — Xi'an Jiaotong-Liverpool University (XJTLU)</h3>
+                  <p>Graduate study focused on digital pedagogy, learning design, and educational technology.</p>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>2021 – 2023</span>
+                    <span class="place">Fredericton, New Brunswick, Canada</span>
+                  </div>
+                  <h3>Bachelor of Education in Early Childhood Education — University of New Brunswick</h3>
+                  <p>Teacher education specialising in how young children learn, grow, and make meaning through play.</p>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <div class="t-card">
+                  <div class="t-meta">
+                    <span>2011 – 2013</span>
+                    <span class="place">Ottawa, Ontario, Canada</span>
+                  </div>
+                  <h3>Early Childhood Education — Algonquin College</h3>
+                  <p>Where my journey began — foundational training in child development and early learning.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo-badge">🍁</span> Sabrin Saraj</div>
+        <div class="footer-funfact">
+          <strong>Fun fact about me:</strong> I'm a third culture kid — born in Saudi Arabia, raised in Canada, and ethnically Eritrean. I speak three languages and I'm working on a fourth (Mandarin).
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Sabrin Saraj · Made with care in Suzhou, China 🇨🇳
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

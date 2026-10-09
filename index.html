@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <title>Sabrin Saraj — Educator &amp; MSc Digital Education Student | Home</title>
+  <meta name="description" content="Hi, I'm Sabrin Saraj — a Canadian educator and MSc Digital Education student at XJTLU in Suzhou, China. Welcome to my personal website!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍁</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">🍁</span> Sabrin Saraj
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">Welcome · 欢迎</span>
+          <h1>Hi, I'm Sabrin <span class="wave">👋</span></h1>
+          <p class="hero-lead">
+            A Canadian educator and equity consultant with <strong>over 12 years of teaching and professional learning</strong>,
+            now living in Suzhou, China, where I'm pursuing my
+            <strong>MSc in Digital Education</strong> at Xi'an Jiaotong-Liverpool University.
+            I'm a Registered Early Childhood Educator and an Ontario Certified Teacher —
+            and I believe learning feels best when it's warm, playful, and human.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">See what I do</a>
+            <a href="contact.html" class="btn btn-ghost">Say hello</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="images/headshot.jpg" alt="Portrait of Sabrin Saraj, smiling warmly" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About / intro ===== -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>A little about me</h2>
+          <p>My happy place is right between the classroom and the big picture of education.</p>
+        </div>
+
+        <div class="intro-grid">
+          <div class="fact-card">
+            <div class="icon">🏫</div>
+            <h3>In the classroom</h3>
+            <p>I've taught young learners for more than 12 years as an RECE and Ontario Certified Teacher.</p>
+          </div>
+          <div class="fact-card">
+            <div class="icon">📐</div>
+            <h3>Behind the curriculum</h3>
+            <p>I design curriculum and facilitate learning with ministries of education, school boards, and stakeholders.</p>
+          </div>
+          <div class="fact-card">
+            <div class="icon">🌏</div>
+            <h3>Learning in Suzhou</h3>
+            <p>Now exploring digital education at XJTLU — a Canadian with a new corner of the world to call home.</p>
+          </div>
+        </div>
+
+        <div class="intro-narrative">
+          <div class="panel">
+            <h3>My journey so far</h3>
+            <p>
+              It all started at <strong>Algonquin College in Ottawa</strong>, where I trained in
+              Early Childhood Education and discovered just how much I loved learning alongside children.
+              I went on to complete my <strong>Bachelor of Education in Early Childhood Education</strong>
+              at the <strong>University of New Brunswick</strong>.
+            </p>
+            <p>
+              Since then, my work has woven through classrooms, consulting, and community leadership —
+              from a decade teaching with the Ottawa-Carleton District School Board (where I received the
+              <strong>Excellence in Equity Award</strong>), to designing anti-oppressive professional learning
+              at Culture Check, to board leadership with Parents for Diversity. These days I'm adding a
+              digital edge to all of it through my master's at XJTLU.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>By the numbers</h3>
+            <p style="color:var(--mocha)">A quick snapshot of my path in education:</p>
+            <div class="stat-row">
+              <div class="stat">
+                <strong>12+</strong>
+                <span>years teaching</span>
+              </div>
+              <div class="stat">
+                <strong>4,000+</strong>
+                <span>educators trained</span>
+              </div>
+              <div class="stat">
+                <strong>6</strong>
+                <span>professional qualifications &amp; AQs</span>
+              </div>
+              <div class="stat">
+                <strong>🏆</strong>
+                <span>2021 Equity Award</span>
+              </div>
+              <div class="stat">
+                <strong>MSc</strong>
+                <span>Digital Education, in progress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Things I like ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Three things I love</h2>
+          <p>When I'm not teaching or studying, you'll usually find me doing one of these.</p>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card">
+            <img src="images/travel.svg" alt="A traveller exploring a sunlit old-town street" />
+            <div class="interest-body">
+              <span class="emoji">✈️</span>
+              <h3>Travelling the world</h3>
+              <p>New cities, new foods, new stories — I love collecting corners of the globe and the perspectives that come with them.</p>
+            </div>
+          </article>
+          <article class="interest-card">
+            <img src="images/snowboarding.svg" alt="A snowboarder carving down a snowy mountain" />
+            <div class="interest-body">
+              <span class="emoji">🏂</span>
+              <h3>Snowboarding</h3>
+              <p>One of my favourite things about growing up in Canada — nothing clears my head like a day on the slopes.</p>
+            </div>
+          </article>
+          <article class="interest-card">
+            <img src="images/meeting-people.svg" alt="Friends laughing together at an outdoor cafe" />
+            <div class="interest-body">
+              <span class="emoji">💛</span>
+              <h3>Meeting new people</h3>
+              <p>Some of my favourite adventures have started with a simple “hello.” Great conversations are my kind of souvenirs.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Let's connect</h2>
+          <p>Whether it's about education, curriculum, travel, or snow conditions — I'd love to hear from you.</p>
+          <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo-badge">🍁</span> Sabrin Saraj</div>
+        <div class="footer-funfact">
+          <strong>Fun fact about me:</strong> I'm a third culture kid — born in Saudi Arabia, raised in Canada, and ethnically Eritrean. I speak three languages and I'm working on a fourth (Mandarin).
+        </div>
+        <ul class="footer-links">
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Sabrin Saraj · Made with care in Suzhou, China 🇨🇳
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <title>Projects — Sabrin Saraj | Educator &amp; Curriculum Developer</title>
+  <meta name="description" content="Selected work and projects by Sabrin Saraj — curriculum development, digital learning, early years teaching, and educator facilitation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍁</text></svg>" />
+  <!-- Supabase JS v2 — for the to-do app -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">🍁</span> Sabrin Saraj
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Projects</p>
+        <h1>Things I've been working on</h1>
+        <p>A selection of the work that lights me up — from classrooms and curriculum to digital learning and educator workshops.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-cover project-cover-logo"><img src="images/culture-check.png" alt="Culture Check logo" /></div>
+            <div class="project-body">
+              <h3>Culture Check — Anti-Black Racism Professional Learning</h3>
+              <p>
+                Designed and facilitated workshop series plus self-paced digital learning modules
+                for early childhood educators and professionals across Ontario. Built reflective
+                learning environments that support educators in confronting bias within themselves
+                and their programs.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Anti-oppressive practice</span>
+                <span class="tag">Digital learning modules</span>
+                <span class="tag">Facilitation</span>
+              </div>
+              <div class="project-links">
+                <a href="contact.html">Ask me about it →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-cover project-cover-logo"><img src="images/ocdsb.jpg" alt="Ottawa-Carleton District School Board logo" /></div>
+            <div class="project-body">
+              <h3>OCDSB — Kindergarten Classroom (Ontario Kindergarten Program)</h3>
+              <p>
+                Hands-on teaching from Kindergarten to Grade 8 with the Ottawa-Carleton District
+                School Board. Implemented the provincial <em>Ontario Kindergarten Program</em> and
+                <em>How Does Learning Happen?</em> framework, documenting learning through the
+                Communication of Learning process.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Early childhood</span>
+                <span class="tag">Play-based learning</span>
+                <span class="tag">Inclusive education</span>
+              </div>
+              <div class="project-links">
+                <a href="contact.html">Ask me about it →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-cover project-cover-logo"><img src="images/mante-molepo.png" alt="Mante Molepo Consulting logo" /></div>
+            <div class="project-body">
+              <h3>Mante Molepo — Ontario Bar Association Accelerator Pilot</h3>
+              <p>
+                Co-designed a pilot Accelerator Program for the Ontario Bar Association to support
+                early-career lawyers. Part of broader equity and inclusion consulting work including
+                institutional policy review and continuous-learning resource design.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Policy review</span>
+                <span class="tag">Program design</span>
+                <span class="tag">Equity frameworks</span>
+              </div>
+              <div class="project-links">
+                <a href="contact.html">Ask me about it →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-cover project-cover-logo"><img src="images/parents4diversity.png" alt="Parents 4 Diversity logo" /></div>
+            <div class="project-body">
+              <h3>Parents for Diversity — Grant-Funded Anti-Bias Education</h3>
+              <p>
+                As Board Director, oversaw grant-funded initiatives that advanced anti-racism and
+                inclusive education across Ottawa school communities. Designed PL for
+                <strong>over 4,000 educators</strong>, curated anti-bias literature collections,
+                and led research to inform community engagement strategy.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Grant coordination</span>
+                <span class="tag">4,000+ educators</span>
+                <span class="tag">Community leadership</span>
+              </div>
+              <div class="project-links">
+                <a href="contact.html">Ask me about it →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-cover c1">💻</div>
+            <div class="project-body">
+              <h3>MSc Digital Education — Research &amp; Learning Design</h3>
+              <p>
+                Graduate study at XJTLU exploring digital pedagogy, learning design, and how
+                thoughtful digital tools can make education more engaging and equitable — including
+                interactive online resources and human-centred learning experiences.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Digital education</span>
+                <span class="tag">Learning design</span>
+                <span class="tag">EdTech</span>
+              </div>
+              <div class="project-links">
+                <a href="contact.html">Ask me about it →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CTA band -->
+        <div class="cta-band" style="margin-top:3rem;">
+          <h2>Want to know more?</h2>
+          <p>I'm always happy to talk about education, curriculum, or potential collaborations.</p>
+          <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+        </div>
+
+        <!-- ===== To-do app ===== -->
+        <div class="todo" id="todo-app" style="margin-top:4rem;">
+          <h2>Things I need to get done</h2>
+          <p class="todo-lead">A little place to plan tasks with a date — great for personal goal-setting.</p>
+
+          <form class="todo-form" id="todo-form">
+            <input type="text" id="todo-text" class="todo-input" placeholder="What do you need to do?" required maxlength="120" />
+            <input type="date" id="todo-date" class="todo-date" required />
+            <button type="submit" class="btn btn-primary todo-add" id="todo-add-btn">Add</button>
+            <div class="todo-extras">
+              <div class="todo-priority" role="radiogroup" aria-label="Priority">
+                <span class="todo-extras-label">Priority</span>
+                <button type="button" class="pri-chip pri-low" data-priority="low" role="radio" aria-checked="true" title="Low">
+                  <span class="pri-dot"></span>Low
+                </button>
+                <button type="button" class="pri-chip pri-medium is-selected" data-priority="medium" role="radio" aria-checked="false" title="Medium">
+                  <span class="pri-dot"></span>Medium
+                </button>
+                <button type="button" class="pri-chip pri-high" data-priority="high" role="radio" aria-checked="false" title="High">
+                  <span class="pri-dot"></span>High
+                </button>
+              </div>
+              <div class="todo-emoji" role="radiogroup" aria-label="Emoji">
+                <span class="todo-extras-label">Icon</span>
+                <button type="button" class="emoji-chip is-selected" data-emoji="none" aria-label="No icon" aria-checked="true">⊘</button>
+                <button type="button" class="emoji-chip" data-emoji="📚" aria-label="Book" aria-checked="false">📚</button>
+                <button type="button" class="emoji-chip" data-emoji="🎯" aria-label="Target" aria-checked="false">🎯</button>
+                <button type="button" class="emoji-chip" data-emoji="🚨" aria-label="Alert" aria-checked="false">🚨</button>
+                <button type="button" class="emoji-chip" data-emoji="🌱" aria-label="Growth" aria-checked="false">🌱</button>
+                <button type="button" class="emoji-chip" data-emoji="☕" aria-label="Coffee" aria-checked="false">☕</button>
+                <button type="button" class="emoji-chip" data-emoji="🏃" aria-label="Run" aria-checked="false">🏃</button>
+                <button type="button" class="emoji-chip" data-emoji="✈️" aria-label="Travel" aria-checked="false">✈️</button>
+              </div>
+            </div>
+          </form>
+
+          <p class="todo-counter" id="todo-counter"></p>
+          <p class="todo-status" id="todo-status" role="status" aria-live="polite"></p>
+
+          <ul class="todo-list" id="todo-list" aria-live="polite"></ul>
+          <p class="todo-empty" id="todo-empty">No tasks yet — add your first one above.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo-badge">🍁</span> Sabrin Saraj</div>
+        <div class="footer-funfact">
+          <strong>Fun fact about me:</strong> I'm a third culture kid — born in Saudi Arabia, raised in Canada, and ethnically Eritrean. I speak three languages and I'm working on a fourth (Mandarin).
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Sabrin Saraj · Made with care in Suzhou, China 🇨🇳
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

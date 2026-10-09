@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <title>Contact Me — Sabrin Saraj | Educator &amp; Equity Consultant</title>
+  <meta name="description" content="Get in touch with Sabrin Saraj — educator, equity consultant, curriculum developer, and MSc Digital Education student at XJTLU." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍁</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">🍁</span> Sabrin Saraj
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Contact Me</p>
+        <h1>Let's talk</h1>
+        <p>I love meeting new people — whether you have a question, an idea, or just want to say hi, my inbox is open.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- ===== Info panel ===== -->
+          <div class="contact-info">
+            <h2>Contact details</h2>
+            <p>Based in Suzhou, China — and always up for a coffee (or a video call) with interesting people.</p>
+            <ul class="contact-list">
+              <li>
+                <span class="ci">✉️</span>
+                <span>
+                  <strong>Email</strong>
+                  <a href="mailto:sabrin.saraj26@student.xjtlu.edu.cn">sabrin.saraj26@student.xjtlu.edu.cn</a>
+                </span>
+              </li>
+              <li>
+                <span class="ci">📍</span>
+                <span>
+                  <strong>Location</strong>
+                  <span>Suzhou, Jiangsu, China</span>
+                </span>
+              </li>
+              <li>
+                <span class="ci">💼</span>
+                <span>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/your-profile</a>
+                </span>
+              </li>
+              <li>
+                <span class="ci">⏰</span>
+                <span>
+                  <strong>Response time</strong>
+                  <span>Usually within a day or two ✨</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ===== Form ===== -->
+          <div class="form-card">
+            <h2 style="font-size:1.7rem;">Send me a message</h2>
+            <p style="color:var(--mocha);">Fill in the form below and it will open in your email app, ready to send.</p>
+            <form id="contact-form" data-email="sabrin.saraj26@student.xjtlu.edu.cn" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="cf-name">Your name</label>
+                  <input type="text" id="cf-name" name="name" placeholder="Jane Doe" required />
+                </div>
+                <div class="field">
+                  <label for="cf-email">Your email</label>
+                  <input type="email" id="cf-email" name="email" placeholder="jane@example.com" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" placeholder="Hi Sabrin, I'd love to chat about…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send message 💌</button>
+              <p class="form-note">This form opens your device's email app — nothing is stored on this website.</p>
+              <div class="form-success" id="form-success" role="status"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo-badge">🍁</span> Sabrin Saraj</div>
+        <div class="footer-funfact">
+          <strong>Fun fact about me:</strong> I'm a third culture kid — born in Saudi Arabia, raised in Canada, and ethnically Eritrean. I speak three languages and I'm working on a fourth (Mandarin).
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Sabrin Saraj · Made with care in Suzhou, China 🇨🇳
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
