@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Illustration of a snowboarder on a mountain">
+  <defs>
+    <linearGradient id="snow-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef4f7"/>
+      <stop offset="1" stop-color="#fdf7f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#snow-sky)"/>
+
+  <!-- sun -->
+  <circle cx="226" cy="170" r="84" fill="#f5c77e"/>
+  <circle cx="226" cy="170" r="116" fill="none" stroke="#f5c77e" stroke-width="9" opacity="0.45"/>
+
+  <!-- snowflakes -->
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="120" cy="330" r="12"/>
+    <circle cx="420" cy="180" r="9"/>
+    <circle cx="930" cy="150" r="12"/>
+    <circle cx="1060" cy="300" r="9"/>
+    <circle cx="760" cy="250" r="7"/>
+    <circle cx="560" cy="110" r="8"/>
+  </g>
+  <g stroke="#cfe0e6" stroke-width="7" stroke-linecap="round" opacity="0.8">
+    <line x1="820" y1="90" x2="820" y2="128"/>
+    <line x1="801" y1="109" x2="839" y2="109"/>
+    <line x1="1000" y1="420" x2="1000" y2="452"/>
+    <line x1="984" y1="436" x2="1016" y2="436"/>
+  </g>
+
+  <!-- back mountains -->
+  <path d="M0 640 L260 330 L420 500 L640 250 L880 520 L1030 380 L1200 560 L1200 900 L0 900 Z" fill="#d7e5ea"/>
+  <path d="M260 330 L312 392 L210 392 Z M640 250 L704 326 L572 326 Z M1030 380 L1076 434 L986 434 Z" fill="#fdf7f0"/>
+
+  <!-- front mountain -->
+  <path d="M430 900 L820 290 L1200 900 Z" fill="#e8f0f3"/>
+  <path d="M820 290 L900 420 L820 392 L744 446 Z" fill="#cfe0e6"/>
+  <path d="M820 290 L880 386 L760 386 Z" fill="#fdf7f0"/>
+  <path d="M560 690 L640 560 L760 720 Z" fill="#ffffff" opacity="0.7"/>
+
+  <!-- pine trees -->
+  <g fill="#89a98b">
+    <path d="M120 720 L168 620 L216 720 Z"/>
+    <path d="M104 700 L168 580 L232 700 Z"/>
+    <path d="M86 676 L168 540 L250 676 Z"/>
+    <rect x="158" y="700" width="20" height="40" fill="#7a5a44"/>
+  </g>
+  <g fill="#9cbb9b">
+    <path d="M1010 744 L1046 672 L1082 744 Z"/>
+    <path d="M998 728 L1046 644 L1094 728 Z"/>
+    <rect x="1038" y="728" width="16" height="32" fill="#7a5a44"/>
+  </g>
+
+  <!-- snow slope -->
+  <path d="M0 900 L0 760 C300 700 620 740 860 700 C1020 674 1130 690 1200 672 L1200 900 Z" fill="#ffffff"/>
+  <path d="M120 820 q120 -26 240 0 M620 800 q140 -24 280 0" stroke="#e3edf1" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- snowboarder -->
+  <g transform="translate(660 640) rotate(-14)">
+    <!-- board -->
+    <path d="M-190 150 Q-20 200 190 150 Q205 144 196 132 Q180 118 160 126 Q0 166 -160 126 Q-184 116 -198 132 Q-206 144 -190 150 Z" fill="#e07856"/>
+    <path d="M-140 140 Q0 172 150 140" stroke="#c4623f" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <!-- legs -->
+    <path d="M-26 60 L-58 138" stroke="#4a5568" stroke-width="34" stroke-linecap="round"/>
+    <path d="M34 64 L92 132" stroke="#4a5568" stroke-width="34" stroke-linecap="round"/>
+    <!-- torso / jacket -->
+    <path d="M-70 -60 Q-78 60 -30 82 L58 82 Q96 60 74 -60 Q60 -110 0 -110 Q-56 -110 -70 -60 Z" fill="#e07856"/>
+    <path d="M0 -104 L0 82" stroke="#c4623f" stroke-width="9" opacity="0.45"/>
+    <!-- arms -->
+    <path d="M-60 -40 Q-120 -10 -150 44" stroke="#e07856" stroke-width="32" stroke-linecap="round" fill="none"/>
+    <path d="M70 -42 Q132 -58 158 -110" stroke="#e07856" stroke-width="32" stroke-linecap="round" fill="none"/>
+    <circle cx="-150" cy="44" r="17" fill="#4a342c"/>
+    <circle cx="158" cy="-110" r="17" fill="#4a342c"/>
+    <!-- head + helmet -->
+    <circle cx="6" cy="-150" r="46" fill="#f4c6a4"/>
+    <path d="M-44 -158 Q0 -214 52 -150 Q50 -182 6 -186 Q-40 -186 -44 -158 Z" fill="#4a5568"/>
+    <rect x="-30" y="-160" width="76" height="16" rx="8" fill="#3d4759"/>
+    <circle cx="22" cy="-146" r="6" fill="#43291b"/>
+    <path d="M-6 -128 q16 12 30 0" stroke="#9c4a34" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- powder spray -->
+  <g fill="#ffffff">
+    <circle cx="470" cy="770" r="14" opacity="0.9"/>
+    <circle cx="430" cy="790" r="9" opacity="0.8"/>
+    <circle cx="500" cy="786" r="7" opacity="0.8"/>
+  </g>
+</svg>

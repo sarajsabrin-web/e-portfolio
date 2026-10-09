@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Illustration of travelling the world">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdeede"/>
+      <stop offset="1" stop-color="#fbe2cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="992" cy="168" r="96" fill="#f5c77e"/>
+  <circle cx="992" cy="168" r="132" fill="none" stroke="#f5c77e" stroke-width="10" opacity="0.45"/>
+
+  <!-- clouds -->
+  <g fill="#ffffff" opacity="0.92">
+    <ellipse cx="212" cy="178" rx="90" ry="42"/>
+    <ellipse cx="286" cy="160" rx="62" ry="40"/>
+    <ellipse cx="150" cy="158" rx="52" ry="32"/>
+    <ellipse cx="760" cy="120" rx="70" ry="32"/>
+    <ellipse cx="818" cy="108" rx="46" ry="28"/>
+  </g>
+
+  <!-- dashed flight path -->
+  <path d="M120 300 C360 120 760 130 1080 330" stroke="#c4623f" stroke-width="8" stroke-linecap="round" stroke-dasharray="4 26" fill="none"/>
+
+  <!-- airplane -->
+  <g transform="translate(1052 318) rotate(26)">
+    <path d="M-70 0 L78 0 Q96 0 96 14 Q96 28 78 28 L-4 28 L-26 74 Q-30 82 -40 82 L-52 82 Q-60 82 -56 72 L-30 28 L-70 28 L-86 48 Q-90 54 -98 54 L-110 54 Q-118 54 -112 44 L-90 28 L-116 24 Q-128 22 -128 14 Q-128 6 -116 4 Z" fill="#e07856"/>
+    <circle cx="52" cy="14" r="6" fill="#fdf7f0"/>
+  </g>
+
+  <!-- globe -->
+  <g transform="translate(430 560)">
+    <circle r="232" fill="#fdf7f0" stroke="#e07856" stroke-width="14"/>
+    <ellipse rx="232" ry="92" fill="none" stroke="#e8b4a0" stroke-width="6"/>
+    <ellipse rx="232" ry="166" fill="none" stroke="#e8b4a0" stroke-width="6"/>
+    <line x1="-232" y1="0" x2="232" y2="0" stroke="#e8b4a0" stroke-width="6"/>
+    <line x1="0" y1="-232" x2="0" y2="232" stroke="#e8b4a0" stroke-width="6"/>
+    <!-- continents -->
+    <path d="M-150 -90 q50 -70 120 -40 q40 18 18 52 q-30 44 -90 34 q-58 -10 -48 -46 z" fill="#89a98b"/>
+    <path d="M40 -20 q70 -10 92 40 q14 38 -16 84 q-24 38 -52 22 q-30 -18 -36 -66 q-6 -56 12 -80 z" fill="#7d9c7f"/>
+    <path d="M-92 70 q46 -14 70 20 q18 30 -8 58 q-30 34 -66 12 q-40 -26 -34 -62 q4 -22 38 -28 z" fill="#9bb59c"/>
+  </g>
+
+  <!-- rolling hills -->
+  <path d="M0 760 C220 690 360 740 520 720 C780 688 960 720 1200 660 L1200 900 L0 900 Z" fill="#bcd2b4"/>
+  <path d="M0 830 C260 760 460 820 700 790 C920 762 1060 790 1200 750 L1200 900 L0 900 Z" fill="#9cbb9b"/>
+
+  <!-- hot-air balloon -->
+  <g transform="translate(880 470)">
+    <path d="M0 -120 C-78 -120 -92 -40 0 18 C92 -40 78 -120 0 -120 Z" fill="#e07856"/>
+    <path d="M0 -120 C-40 -120 -46 -34 0 18 C46 -34 40 -120 0 -120 Z" fill="#f0b86e"/>
+    <line x1="-46" y1="-2" x2="-24" y2="40" stroke="#c4623f" stroke-width="5"/>
+    <line x1="46" y1="-2" x2="24" y2="40" stroke="#c4623f" stroke-width="5"/>
+    <rect x="-28" y="40" width="56" height="34" rx="10" fill="#fdf7f0" stroke="#c4623f" stroke-width="5"/>
+  </g>
+
+  <!-- suitcase -->
+  <g transform="translate(180 760)">
+    <rect x="-70" y="-58" width="140" height="112" rx="20" fill="#e07856"/>
+    <rect x="-24" y="-86" width="48" height="34" rx="14" fill="none" stroke="#c4623f" stroke-width="10"/>
+    <rect x="-70" y="-14" width="140" height="26" fill="#c4623f"/>
+    <circle cx="-40" cy="20" r="8" fill="#f5c77e"/>
+    <circle cx="40" cy="20" r="8" fill="#f5c77e"/>
+  </g>
+</svg>

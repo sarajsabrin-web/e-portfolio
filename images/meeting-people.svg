@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Illustration of friends meeting and laughing together">
+  <defs>
+    <linearGradient id="meet-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3e8"/>
+      <stop offset="1" stop-color="#f7ddcb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#meet-bg)"/>
+
+  <!-- decorations -->
+  <circle cx="150" cy="170" r="90" fill="#f4c9b6" opacity="0.6"/>
+  <circle cx="1050" cy="200" r="120" fill="#f4c9b6" opacity="0.5"/>
+  <path d="M160 620 l14 30 33 5 -24 23 6 33 -29 -16 -29 16 6 -33 -24 -23 33 -5 z" fill="#f0b86e" opacity="0.8"/>
+  <circle cx="1020" cy="640" r="16" fill="#89a98b" opacity="0.7"/>
+  <circle cx="960" cy="700" r="10" fill="#e07856" opacity="0.6"/>
+
+  <!-- speech bubbles -->
+  <g>
+    <path d="M300 150 h150 a36 36 0 0 1 36 36 v60 a36 36 0 0 1 -36 36 h-86 l-44 34 l10 -34 h-30 a36 36 0 0 1 -36 -36 v-60 a36 36 0 0 1 36 -36 z" fill="#ffffff"/>
+    <circle cx="350" cy="216" r="12" fill="#e07856"/>
+    <circle cx="400" cy="216" r="12" fill="#f0b86e"/>
+    <circle cx="450" cy="216" r="12" fill="#89a98b"/>
+
+    <path d="M760 110 h140 a34 34 0 0 1 34 34 v52 a34 34 0 0 1 -34 34 h-44 l10 30 -38 -30 h-68 a34 34 0 0 1 -34 -34 v-52 a34 34 0 0 1 34 -34 z" fill="#ffffff"/>
+    <path d="M812 196 l22 24 44 -50" stroke="#89a98b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- ground -->
+  <ellipse cx="600" cy="830" rx="470" ry="46" fill="#e8b4a0" opacity="0.55"/>
+
+  <!-- ===== Person 1 (left) ===== -->
+  <g transform="translate(330 640)">
+    <!-- body -->
+    <path d="M-130 200 C-130 60 -70 0 0 0 C70 0 130 60 130 200 Z" fill="#89a98b"/>
+    <path d="M-40 8 Q0 60 40 8 L40 44 Q0 26 -40 44 Z" fill="#fdf7f0"/>
+    <!-- neck -->
+    <rect x="-34" y="-52" width="68" height="80" rx="30" fill="#f0bf98"/>
+    <!-- head -->
+    <circle cx="0" cy="-120" r="86" fill="#f4c6a4"/>
+    <!-- hair -->
+    <path d="M-86 -132 C-92 -214 86 -214 92 -132 C60 -176 -50 -178 -86 -132 Z" fill="#43291b"/>
+    <!-- face -->
+    <circle cx="-30" cy="-112" r="10" fill="#43291b"/>
+    <circle cx="30" cy="-112" r="10" fill="#43291b"/>
+    <circle cx="-52" cy="-88" r="15" fill="#ef9a86" opacity="0.55"/>
+    <circle cx="52" cy="-88" r="15" fill="#ef9a86" opacity="0.55"/>
+    <path d="M-26 -74 Q0 -46 26 -74" stroke="#9c4a34" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- waving arm -->
+    <path d="M-104 70 q-70 -20 -96 -92" stroke="#89a98b" stroke-width="34" stroke-linecap="round" fill="none"/>
+    <circle cx="-200" cy="-26" r="24" fill="#f4c6a4"/>
+  </g>
+
+  <!-- ===== Person 2 (middle, taller) ===== -->
+  <g transform="translate(600 600)">
+    <!-- body -->
+    <path d="M-148 240 C-148 80 -80 10 0 10 C80 10 148 80 148 240 Z" fill="#e07856"/>
+    <path d="M-46 20 Q0 78 46 20 L46 62 Q0 42 -46 62 Z" fill="#fdf7f0"/>
+    <!-- neck -->
+    <rect x="-38" y="-44" width="76" height="86" rx="32" fill="#f0bf98"/>
+    <!-- head -->
+    <circle cx="0" cy="-120" r="94" fill="#f4c6a4"/>
+    <!-- hair: shoulder length -->
+    <path d="M-96 -124 C-104 -232 104 -232 96 -124 C108 -60 92 0 78 18 L48 -6 C62 -34 56 -92 52 -128 C20 -164 -52 -166 -80 -128 C-80 -80 -86 -30 -60 0 L-84 16 C-100 -4 -108 -64 -96 -124 Z" fill="#6e4129"/>
+    <!-- fringe -->
+    <path d="M-80 -128 C-56 -190 40 -196 72 -132 C36 -156 -30 -154 -80 -128 Z" fill="#7a4a30"/>
+    <!-- face -->
+    <circle cx="-32" cy="-108" r="11" fill="#43291b"/>
+    <circle cx="32" cy="-108" r="11" fill="#43291b"/>
+    <circle cx="-56" cy="-82" r="16" fill="#ef9a86" opacity="0.55"/>
+    <circle cx="56" cy="-82" r="16" fill="#ef9a86" opacity="0.55"/>
+    <path d="M-28 -68 Q0 -38 28 -68" stroke="#9c4a34" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <!-- arms open wide -->
+    <path d="M-118 90 q-90 10 -138 -44" stroke="#e07856" stroke-width="36" stroke-linecap="round" fill="none"/>
+    <path d="M118 90 q90 10 138 -44" stroke="#e07856" stroke-width="36" stroke-linecap="round" fill="none"/>
+    <circle cx="-258" cy="44" r="25" fill="#f4c6a4"/>
+    <circle cx="258" cy="44" r="25" fill="#f4c6a4"/>
+  </g>
+
+  <!-- ===== Person 3 (right) ===== -->
+  <g transform="translate(870 640)">
+    <!-- body -->
+    <path d="M-130 200 C-130 60 -70 0 0 0 C70 0 130 60 130 200 Z" fill="#f0b86e"/>
+    <path d="M-40 8 Q0 60 40 8 L40 44 Q0 26 -40 44 Z" fill="#fdf7f0"/>
+    <!-- neck -->
+    <rect x="-34" y="-52" width="68" height="80" rx="30" fill="#e8ac85"/>
+    <!-- head -->
+    <circle cx="0" cy="-120" r="86" fill="#d99a76"/>
+    <!-- short curly hair -->
+    <g fill="#2f2019">
+      <circle cx="-66" cy="-168" r="26"/>
+      <circle cx="-34" cy="-196" r="28"/>
+      <circle cx="8" cy="-202" r="28"/>
+      <circle cx="48" cy="-192" r="27"/>
+      <circle cx="74" cy="-160" r="25"/>
+      <circle cx="-80" cy="-138" r="22"/>
+      <circle cx="82" cy="-132" r="21"/>
+    </g>
+    <!-- face -->
+    <circle cx="-30" cy="-112" r="10" fill="#2f2019"/>
+    <circle cx="30" cy="-112" r="10" fill="#2f2019"/>
+    <circle cx="-52" cy="-88" r="15" fill="#d9876c" opacity="0.7"/>
+    <circle cx="52" cy="-88" r="15" fill="#d9876c" opacity="0.7"/>
+    <path d="M-26 -74 Q0 -48 26 -74" stroke="#7a3526" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- arm holding cup -->
+    <path d="M104 64 q70 -26 86 -86" stroke="#f0b86e" stroke-width="34" stroke-linecap="round" fill="none"/>
+    <rect x="166" y="-96" width="52" height="56" rx="12" fill="#fdf7f0" stroke="#c4623f" stroke-width="7"/>
+    <path d="M218 -78 h12 a14 14 0 0 1 0 28 h-12" fill="none" stroke="#c4623f" stroke-width="7"/>
+  </g>
+
+  <!-- floating heart -->
+  <path d="M600 300 c-22 -34 -78 -8 -60 32 c12 28 60 58 60 58 c0 0 48 -30 60 -58 c18 -40 -38 -66 -60 -32 z" fill="#e07856"/>
+</svg>
